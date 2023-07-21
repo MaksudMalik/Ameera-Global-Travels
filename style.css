@@ -3,6 +3,7 @@
     src: url('Files\Sisterhood.ttf') format('truetype');
   }
 body{
+    margin: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +37,7 @@ header{width: 95%;
 .topname{
     font-family: 'Exo 2', sans-serif;
     color: #336798;
-    font-size:45px;
+    font-size:3vw;
     padding-bottom: 1.5%;
     border-bottom: #00CBFE solid 4px;
     text-align: center;
@@ -98,29 +99,30 @@ header{width: 95%;
     margin-top: 1%;
     margin-bottom: 2%;
     color: aliceblue;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
 }
 .featured{
     margin-top: 1.5%;
     font-family: sisterhood;
     margin-bottom: 2%;
     color:#336798;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
     text-align: center;
 }
 .logo-grid {
-    width: 90%;
+    width: 92%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 2%;
     row-gap: 7%;
+    margin-bottom: 5%;
     justify-items: center;
 }
 .logo_container{
     background-color: #e1f0ff;;
     width: 100%;
     height: 100%;
-    border-radius: 7px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,13 +137,74 @@ header{width: 95%;
 .form{
     display: flex;
     flex-direction: row;
-    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    border-radius: 10px;
+    border: #336798 solid 2.5px;
+    margin-bottom: 1%;
+}
+.form p{
+    font-family: 'Exo 2', sans-serif;
+    color: #336798;
+    font-size: 2vw;
+    margin: 0%;
+    width: 75%;
+    text-align: center;
+}
+.form a{
+    width: 25%;
+}
+.form button{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2vw;
+    width: 100%;
+    height: 4.5vw;
+    margin: 0%;
+    background-color: #00CBFE;
+    border: none;
+    border-left: #336798 solid 2.5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: ease, transform 0.3s ease;
+}
+.form button:hover{
+    background-color: #336798;
+    color: aliceblue;
 }
 footer{
+    width: 100%;
     margin-top: 2%;
+    background-color: #336798;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.footerlogo{
-    width: 45%;
-    height: auto;
-    padding-left: 10%;
+footer p{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5vw;
+}
+footer p:first-child{
+    font-size: 3vw;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+footer p:nth-child(2){
+    margin-top: 0.5%;
+}
+.footer_contact{
+    width: 11%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+.footer_contact a{
+    transition: ease, transform 0.3s ease;
+}
+.footer_contact a:hover {
+    transform: scale(1.1);
 }
