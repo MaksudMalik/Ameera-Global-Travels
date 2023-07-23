@@ -18,7 +18,8 @@ body{
     top: 0;
 }
 header{width: 95%;
-    height: 75vh;
+    height: 37vw;
+    min-height: 30vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +77,6 @@ header{width: 95%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-evenly;
-    row-gap: 5%;
     column-gap: 1.5%;
     border: #00CBFE solid 0.25vw;
     margin-bottom: 2%;
@@ -135,6 +135,9 @@ header{width: 95%;
 .algo{
     width:100%;
 }
+#last{
+    display: none;
+}
 .form{
     display: flex;
     flex-direction: row;
@@ -171,7 +174,6 @@ header{width: 95%;
     border-left: #336798 solid 0.25vw;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    transition: ease, transform 0.3s ease;
 }
 .form button:hover{
     background-color: #336798;
@@ -197,6 +199,7 @@ footer p:first-child{
     margin-bottom: 0%;
 }
 footer p:nth-child(2){
+    font-size: 2vw;
     margin-top: 0.5%;
 }
 .footer_contact{
@@ -216,4 +219,72 @@ footer p:nth-child(2){
 }
 .footer_contact a:hover {
     transform: scale(1.1);
+}
+@media(max-width : 535px) {
+    .asset1{
+        width: 30%;
+    }
+    .asset2{
+        width: 21%;
+    }
+    .headername{
+        width: 75%;
+    }
+    .topname{
+        font-size:5vw;
+        border-bottom: #00CBFE solid 0.5vw;
+    }
+    .contact{
+        width: 20%;
+    }
+    .tiles{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2%;
+        column-gap: 3%;
+        padding: 2%;
+        padding-bottom: 4.5%;
+    }
+    .flytext{
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        font-size: 7vw;
+    }
+    .featured{
+        margin-top: 3.5%;
+        margin-bottom: 2.5%;
+        font-size: 8.5vw;
+    }
+    .logo-grid{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2%;
+        row-gap: 5%;
+        margin-bottom: 10%;
+        justify-items: center;
+    }
+    #last{
+        display:flex;
+    }
+    .form{
+        width: 75%;
+        border: #336798 solid 0.5vw;
+    }
+    .form a{
+        border-left: #336798 solid 0.5vw;
+    }
+    .form p,
+    .form button{
+        font-size: 2.5vw;
+    }
+    footer p:first-child{
+        font-size: 4.5vw;
+        margin-top: 2%;
+    }
+    footer p:nth-child(2){
+        font-size: 3vw;
+        margin-top: 1.2%;
+    }
+    .footer_contact{
+        margin-bottom: 4vw;
+    }
 }
